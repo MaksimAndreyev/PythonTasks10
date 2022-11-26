@@ -6,14 +6,23 @@ class MinStat:
         self.stack.append(n)
 
     def result(self):
-        return min(self.stack)
+        try:
+            return min(self.stack)
+        except:
+            return None
 
 
 class MaxStat(MinStat):
     def result(self):
-        return max(self.stack)
+        try:
+            return max(self.stack)
+        except:
+            return None
 
 
 class AverageStat(MinStat):
     def result(self):
-        return sum(self.stack) / len(self.stack)
+        try:
+            return sum(self.stack) / len(self.stack)
+        except:
+            return None

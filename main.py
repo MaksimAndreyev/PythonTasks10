@@ -7,4 +7,4 @@ for v in values:
     mins.add_number(v)
     maxs.add_number(v)
     average.add_number(v)
-print(mins.result(), maxs.result(), '{:<05.3}'.format(average.result()))
+print(mins.result(), maxs.result(), average.result())
